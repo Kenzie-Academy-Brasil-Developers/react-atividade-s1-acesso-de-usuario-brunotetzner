@@ -16,15 +16,13 @@ function App() {
     console.log(isLoggedIn);
   }
   return (
-    <div>
-      <div className="App-header">
-        <RestrictedPage
-          isLoggedIn={isLoggedIn}
-          user={user}
-          login={login}
-          logout={logout}
-        />
-      </div>
+    <div id="container">
+      <RestrictedPage
+        isLoggedIn={isLoggedIn}
+        user={user}
+        login={login}
+        logout={logout}
+      />
     </div>
   );
 }

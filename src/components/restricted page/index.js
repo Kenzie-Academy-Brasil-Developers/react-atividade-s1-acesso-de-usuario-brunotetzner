@@ -1,15 +1,20 @@
+import "./style.css";
 function RestrictedPage({ isLoggedIn, user, login, logout }) {
   return (
     <>
       {isLoggedIn ? (
-        <div>
-          <p>Hello!,{user}</p>
-          <button onClick={logout}>logout</button>
+        <div class="container-mensage" id="true">
+          <p>Hello! {user}</p>
+          <button id="logout" onClick={logout}>
+            logout
+          </button>
         </div>
       ) : (
-        <div>
+        <div class="container-mensage" id="false">
           <p>Você não pode acessar essa pagína</p>
-          <button onClick={login}>login</button>
+          <button id="login" onClick={login}>
+            login
+          </button>
         </div>
       )}
     </>
